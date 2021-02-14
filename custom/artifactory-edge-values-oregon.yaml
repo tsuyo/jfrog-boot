@@ -1,0 +1,10 @@
+artifactory:
+  license:
+    dataKey: edge-oregon.lic
+
+ingress:
+  hosts:
+    - edge-oregon.tsuyo.org
+  tls:
+     - hosts:
+        - edge-oregon.tsuyo.org

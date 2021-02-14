@@ -1,0 +1,10 @@
+artifactory:
+  license:
+    dataKey: 2_edge.lic
+
+ingress:
+  hosts:
+    - edge.tsuyo.org
+  tls:
+     - hosts:
+        - edge.tsuyo.org

@@ -1,0 +1,10 @@
+artifactory:
+  license:
+    dataKey: edge-london.lic
+
+ingress:
+  hosts:
+    - edge-london.tsuyo.org
+  tls:
+     - hosts:
+        - edge-london.tsuyo.org
