@@ -1,0 +1,16 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: tsuyo-org
+  # this cert is meant for Ingress "default SSL certificate"
+  namespace: default
+spec:
+  dnsNames:
+    - "tsuyo.org"
+    - "*.tsuyo.org"
+  secretName: tsuyo-org-tls
+  issuerRef:
+    name: route53-letsencrypt-issuer
+    kind: ClusterIssuer
+  duration: 2160h # 90d
+  renewBefore: 360h # 15d

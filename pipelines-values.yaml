@@ -1,0 +1,70 @@
+databaseUpgradeReady: true
+
+pipelines:
+  jfrogUrl: http://artifactory-ha.artifactory-ha:8082 # <service>.<namespace>
+  jfrogUrlUI: https://platform.tsuyo.org
+  masterKey: 7a340078cbbf5b6aa44cef898efb5b485c95d0851043f10d96d0aa2c086dc03e
+  joinKey: eb9d5f2f2eff4366f42c65dc237814ef98355e8674d6da34571720b546105921
+  authToken: 99eb7537-d920-4f8a-8180-fa297a1263ac
+  serviceId: jfpip@1234567890
+
+  msg:
+    uiUserPassword: somepassword
+
+  api:
+    ingress:
+      enabled: true
+      annotations:
+        # cert-manager.io/cluster-issuer: route53-letsencrypt-issuer
+        kubernetes.io/ingress.class: nginx
+        kubernetes.io/tls-acme: "true"
+        ingress.kubernetes.io/force-ssl-redirect: "false"
+        ingress.kubernetes.io/proxy-body-size: "0"
+        ingress.kubernetes.io/proxy-read-timeout: "600"
+        ingress.kubernetes.io/proxy-send-timeout: "600"
+        nginx.ingress.kubernetes.io/proxy-body-size: "0"
+      path: /
+      hosts:
+        - pipelines-api.tsuyo.org
+      tls:
+        # Most ingress controllers, including ingress-nginx, Traefik, and Kong support specifying a single certificate
+        # to be used for ingress resources which request TLS but do not specify tls.[].secretName.
+        # see https://cert-manager.io/docs/faq/kubed/
+        # - secretName: tsuyo-org-tls 
+        - hosts:
+            - pipelines-api.tsuyo.org    
+
+  www:
+    ingress:
+      enabled: true
+      annotations:
+        # cert-manager.io/cluster-issuer: route53-letsencrypt-issuer
+        kubernetes.io/ingress.class: nginx
+        kubernetes.io/tls-acme: "true"
+        ingress.kubernetes.io/force-ssl-redirect: "false"
+        ingress.kubernetes.io/proxy-body-size: "0"
+        ingress.kubernetes.io/proxy-read-timeout: "600"
+        ingress.kubernetes.io/proxy-send-timeout: "600"
+        nginx.ingress.kubernetes.io/proxy-body-size: "0"
+      path: /
+      hosts:
+        - pipelines-www.tsuyo.org
+      tls:
+        # - secretName: tsuyo-org-tls
+        - hosts:
+            - pipelines-api.tsuyo.org    
+
+rabbitmq:
+  enabled: true
+  auth:
+    password: somepassword
+#  # static ip name: unified-emea-staging-rabbitmq-lb in us-central1
+#  # gcloud compute addresses describe unified-emea-staging-rabbitmq-lb --region us-central1
+#  # If you want to connect to external node pool, you need to connfigure this
+#  serviceVmLb:
+#    loadBalancerIP: 34.84.8.96 
+#    enabled: true
+
+# PostgreSQL
+postgresql:
+  postgresqlPassword: somepassword

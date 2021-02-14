@@ -1,0 +1,39 @@
+databaseUpgradeReady: true
+
+artifactory:
+  masterKey: d35c9faa5d1bd8ae252eca448df6b4a6257d808e1db3fcf47bade151831b8ff7
+  joinKey: 181c04f2025695c480c28048d30ea8f96e28dd5b8d93a9606409d38840e5c166
+  license:
+    secret: artifactory-edge-license
+    dataKey: 2_edge.lic
+
+ingress:
+  enabled: true
+  annotations:
+    # cert-manager.io/cluster-issuer: route53-letsencrypt-issuer
+    kubernetes.io/ingress.class: nginx
+    kubernetes.io/tls-acme: "true"
+    ingress.kubernetes.io/force-ssl-redirect: "false"
+    ingress.kubernetes.io/proxy-body-size: "0"
+    ingress.kubernetes.io/proxy-read-timeout: "600"
+    ingress.kubernetes.io/proxy-send-timeout: "600"
+    nginx.ingress.kubernetes.io/proxy-body-size: "0"
+    # nginx.ingress.kubernetes.io/configuration-snippet: |
+    #   proxy_pass_header   Server;
+    #   proxy_set_header    X-JFrog-Override-Base-Url http://platform.tsuyo.org;    
+  path: /
+  hosts:
+    - edge.tsuyo.org
+  tls:
+     # Most ingress controllers, including ingress-nginx, Traefik, and Kong support specifying a single certificate
+     # to be used for ingress resources which request TLS but do not specify tls.[].secretName.
+     # see https://cert-manager.io/docs/faq/kubed/
+     # - secretName: tsuyo-org-tls
+     - hosts:
+        - edge.tsuyo.org
+
+nginx:
+  enabled: false
+
+postgresql:
+  postgresqlPassword: password

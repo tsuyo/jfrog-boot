@@ -1,0 +1,16 @@
+unifiedUpgradeAllowed: true
+databaseUpgradeReady: true
+
+common:
+  persistence:
+    size: 200Gi
+
+xray:
+  jfrogUrl: http://artifactory-ha.artifactory-ha:8082 # <service>.<namespace>
+  joinKey: eb9d5f2f2eff4366f42c65dc237814ef98355e8674d6da34571720b546105921
+
+postgresql:
+  postgresqlPassword: password
+  persistence:
+    enabled: true
+    size: 100Gi
