@@ -6,3 +6,5 @@ helm upgrade xray -i -n xray -f common/xray-values.yaml center/jfrog/xray
 helm upgrade distribution -i -n distribution -f common/distribution-values.yaml center/jfrog/distribution
 helm upgrade pipelines -i -n pipelines -f common/pipelines-values.yaml center/jfrog/pipelines
 helm upgrade artifactory-edge -i -n artifactory-edge -f common/artifactory-edge-values.yaml center/jfrog/artifactory
+
+helm upgrade jenkins -i -n jenkins -f common/jenkins-values.yaml jenkins/jenkins
