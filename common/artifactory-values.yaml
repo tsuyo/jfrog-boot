@@ -8,6 +8,45 @@ artifactory:
     dataKey: 3_entplus.lic
 #   service:
 #     type: NodePort
+  systemYaml: |
+    shared:
+        logging:
+            consoleLog:
+                enabled: false
+        extraJavaOpts: >
+            -Dartifactory.access.client.max.connections=50 -Dartifactory.async.corePoolSize=16
+
+        database:
+            type: postgresql
+            url: "jdbc:postgresql://artifactory-ha-postgresql:5432/artifactory"
+            host: ""
+            driver: org.postgresql.Driver
+            username: "artifactory"
+    artifactory:
+        metrics:
+            enabled: false
+        database:
+            maxOpenConnections: 80
+        tomcat:
+            connector:
+                maxThreads: 200
+                extraConfig: acceptCount="100"
+    frontend:
+        session:
+            timeMinutes: "30"
+        featureToggler:
+        ## Enables Projects in the JFrog Platform
+            commonProjects: true
+    access:
+        database:
+            maxOpenConnections: 80
+        tomcat:
+            connector:
+                maxThreads: 50
+                extraConfig: acceptCount="100"
+    metadata:
+        database:
+            maxOpenConnections: 80
 
 ingress:
   enabled: true
