@@ -8,3 +8,4 @@ helm upgrade pipelines -i -n pipelines -f common/pipelines-values.yaml center/jf
 helm upgrade artifactory-edge -i -n artifactory-edge -f common/artifactory-edge-values.yaml center/jfrog/artifactory
 
 helm upgrade jenkins -i -n jenkins -f common/jenkins-values.yaml jenkins/jenkins
+helm upgrade mailhog -i -n mailhog -f common/mailhog-values.yaml codecentric/mailhog
