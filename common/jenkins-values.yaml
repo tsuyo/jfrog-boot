@@ -1,4 +1,12 @@
 controller:
+  resources:
+    requests:
+      cpu: "1000m"
+      memory: "4096Mi"
+    limits:
+      cpu: "2000m"
+      memory: "8192Mi"
+  numExecutors: 3
   # adminPassword:
   ingress:
     enabled: true
@@ -15,3 +23,6 @@ controller:
     tls:
     - hosts:
         - jenkins.tsuyo.org
+
+agent:
+  enabled: false
