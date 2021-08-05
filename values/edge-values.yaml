@@ -1,0 +1,55 @@
+databaseUpgradeReady: ENC[AES256_GCM,data:Qobv3g==,iv:epV2aFI1v2LWMckIiktEym4XUMDmBQS5aNX99Y78n0g=,tag:OuqFuCXaBBSzzjlI+OTSHA==,type:bool]
+artifactory:
+    masterKey: ENC[AES256_GCM,data:Z5PQTHpwx9EgAR8Eyu+3i8Wq3ee6ozaPtFmUx2Rg0L3rIVAvZeY9jeK03ykVORPHdn1zpva5cN0CDtqaL/+O9w==,iv:9HDfdVkPYQtRQJLXOBXi/2BNQFw/FfhTcBP9fpIXW/g=,tag:GXy9JVCvSerAXlpRaOKwWg==,type:str]
+    joinKey: ENC[AES256_GCM,data:0Ht/Ss0pbtNaDiKsvMMMr5k3oWFJLe0O4Hl5n+51NBpjkN0syM5bvqFw6RqOqKqRLj7o44QXyrAeaLGHiNAC9A==,iv:ODr/B+APxo46oRRp7UZgWRxGLOFwcTCFhh97qZee7+k=,tag:X/tWW/AD8i7zv0HFFcYfdw==,type:str]
+    license:
+        licenseKey: ENC[AES256_GCM,data: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,iv:/vpyrtRHEplsn7vk/4PuUEbVN/CWr5Cu+v3WEKPcm9A=,tag:uz9addhYk7vHLTX8+fqAFQ==,type:str]
+ingress:
+    enabled: ENC[AES256_GCM,data:kL/JcQ==,iv:pIzyRkta0Ll3SOk/jJ91h9GHQb5P15f8e5fTDMcrxaQ=,tag:7z+f5kQorL9k+QUjqAx3uA==,type:bool]
+    annotations:
+        kubernetes.io/ingress.class: ENC[AES256_GCM,data:pFk55Bk=,iv:7D1Nj9lHFynfoAYVc40/LXGsuRNEa3OMiGIz5gMns5c=,tag:TXzEdDSuFGXml4Hu7LORlw==,type:str]
+        kubernetes.io/tls-acme: ENC[AES256_GCM,data:vOrsXA==,iv:aEPUhIHe2XDZBTet40OVzFEjNUUAYUClwPrkohyKKs4=,tag:Kb7cwebSdEBQqblUPr60oQ==,type:str]
+        ingress.kubernetes.io/force-ssl-redirect: ENC[AES256_GCM,data:9RR8Id4=,iv:u+z3fDUxcn/6mFVuDA04sRYF3Vq/fZTv9xKNowd8+ZA=,tag:ACcah1zRrZbbzwp74Uq2yg==,type:str]
+        ingress.kubernetes.io/proxy-body-size: ENC[AES256_GCM,data:4Q==,iv:m14iZqNUjs2EB5QwxYyhm5ubbAOBR/V6QIaoQcFuh7Y=,tag:8U3B8clmV/dB9TBeTDCWxA==,type:str]
+        ingress.kubernetes.io/proxy-read-timeout: ENC[AES256_GCM,data:OKhz,iv:/UXs6dHu65zN6pJxooaZi4BaTI8AEmw6Vl/9l1o/Tds=,tag:3jj5z6SuYnMCKRFTlBIdsw==,type:str]
+        ingress.kubernetes.io/proxy-send-timeout: ENC[AES256_GCM,data:tWpC,iv:AEuKoFoF4ixWif/07n0A/l8cEXuiXDfIBQjDI5qURWE=,tag:t8/MypGn5npoeTfOXozPCA==,type:str]
+        nginx.ingress.kubernetes.io/proxy-body-size: ENC[AES256_GCM,data:UA==,iv:y1DTZa2GJ9dAHEpi2zRb5P08givuWbPKfFxcswpxx4w=,tag:xtIizMOVOZ0PUQClq0meHg==,type:str]
+    path: ENC[AES256_GCM,data:9g==,iv:TGgcQX/w4LmxvwG+JuZu44RRx94VoCPJeSqi28eo7/U=,tag:Us5XTrjCSyNnkrdTN/XTDg==,type:str]
+    hosts:
+        - ENC[AES256_GCM,data:HPvUetyUYZNNlUqi0toelf3Wng==,iv:qNhRGhq36C9tSjOl2IzKhcfzjLTTbxX0ztC810XSvaQ=,tag:hOUCKGWUNeG54f2IzTvW2Q==,type:str]
+    tls:
+        - hosts:
+            - ENC[AES256_GCM,data://gC+wrcXSVfyNsZ8GpnrzGnqg==,iv:NVEGhHGWhATMaLvvmG194OQ+iWNRPawr7gTsfr8gNa8=,tag:FqsoPdPgd0Ccs3DzwQvrEw==,type:str]
+nginx:
+    enabled: ENC[AES256_GCM,data:0u94aUQ=,iv:Xu7ggYbJUikmj5mClrOy85Nyn0k9R+Y5YZi1eCPv31I=,tag:qIyIAClUBWm1bDSnzoWZNg==,type:bool]
+postgresql:
+    postgresqlPassword: ENC[AES256_GCM,data:RgD3a1pXDoU=,iv:u7ZRbNl7FD4SjEolia6eE6zeLMaIkoe3FwfT2dTjUqE=,tag:n2qEIBA7dImfcemo41H4XQ==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2021-08-05T07:18:35Z"
+    mac: ENC[AES256_GCM,data:ZiMIepsTgCd8frhPnE7C1AGXjxsFL1TUdgfd7Qn0s/b5/CH7CW8HheVux285kkkSGZh1razxi7YPCe98b5VkqlNGo+eL27AtM49BzOuAz+I2jZ3A0T4sfsmvJYSUKoLkPtMz3n2Oe4es6vKzpYg7GY3eLkkPWqlm0voJQmqltek=,iv:vwb7YuJyC22wu2cPTMHDEHNEl9fPbVUEK3R1bMX41Kk=,tag:vnzzbPBnW3uPEw2ZpNnLZw==,type:str]
+    pgp:
+        - created_at: "2021-08-04T10:23:13Z"
+          enc: |
+            -----BEGIN PGP MESSAGE-----
+
+            hQGMAy3AJIy/gItpAQv/Wry9PS+GMG+XLWzd4IurMRP1pW63dOsGRKwU0wURJ8U7
+            5zEnHXUQLfdBCDXfFyqPpqNQ2JA3kaxE2rq9BO0Tvv+AxPEodMQQ4vvJcosQnhHM
+            P2E9j7bOq4uaASbGMTVuaQdZw//vTIlDUuZospc+BYP/Vb19pmWpNqep6qvJmoaO
+            l9MlNuq1GvNUtPxBv4tybO213ytycpnqVeM3t+21nCbeIDnhnoNuqMqJL77iUAom
+            nXeDdGtef+T6CkI7TmDjwalwLXsQbt36GC29SJdKni2GgyssNR7gzBam8Dnl95pm
+            Zou+x0fpkHlvqTCRR0L+Gee3HCQeWWTrKuW2ck2NnnrXmuRE9AdH2dy0ilcwKQeO
+            is3Z72x+J1toz6CGARHHRgamfhRf6QFUz7fySjxJw2NrCth79fnAhWwhehds3G+r
+            WnONwInhd7+gGMQarR+WEgLqWn9FhDUyZNto00gJrYWACyyGeLpTwODM2/kcw3Wk
+            baDPU/yDx2gJHNn6f8uR0lwBEIbFfOenka6f+R6HTjeOafozaQZFae6TtAsWddBj
+            UM3+a+qMuTaljC/YRnGaRLHmDW5TQ3A1CpYqwJ34Q32FdqMW1yZZ2kIRDbRZLocg
+            cDpY+yXLrIm+Sm4B0g==
+            =J7fj
+            -----END PGP MESSAGE-----
+          fp: 0F6B1030542DA39FE1B61086227DBC0C6AEED345
+    unencrypted_suffix: _unencrypted
+    version: 3.7.1
