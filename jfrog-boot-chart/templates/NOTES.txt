@@ -1,1 +1,9 @@
 Welcome JFrog Boot!
+
+You can get kubeconfig for jfrog pipelines k8s node pool with the following command
+
+$ kubectl config view --minify --flatten --context=$(kubectl config current-context) |\
+  yq w - "contexts[0].context.user" "nodepool-sa" |\
+  yq w - "users[0].name" "nodepool-sa" |\
+  yq w - "users[0].user.token" `kubectl -n kube-system get secret $(kubectl -n kube-system get secret | grep nodepool-sa- | awk '{print $1}') -o jsonpath={.data.token} | base64 -d` |\
+  yq d - "users[0].user.auth-provider"
