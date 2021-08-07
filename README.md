@@ -1,11 +1,13 @@
-# Upgrade
-helm upgrade artifactory -i -n artifactory -f common/artifactory-values.yaml center/jfrog/artifactory
-helm upgrade artifactory-ha -i -n artifactory-ha -f common/artifactory-values.yaml center/jfrog/artifactory-ha
-helm upgrade mission-control -i -n mission-control -f common/mission-control-values.yaml center/jfrog/mission-control
-helm upgrade xray -i -n xray -f common/xray-values.yaml center/jfrog/xray
-helm upgrade distribution -i -n distribution -f common/distribution-values.yaml center/jfrog/distribution
-helm upgrade pipelines -i -n pipelines -f common/pipelines-values.yaml center/jfrog/pipelines
-helm upgrade artifactory-edge -i -n artifactory-edge -f common/artifactory-edge-values.yaml center/jfrog/artifactory
+# Install / Upgrade
 
-helm upgrade jenkins -i -n jenkins -f common/jenkins-values.yaml jenkins/jenkins
-helm upgrade mailhog -i -n mailhog -f common/mailhog-values.yaml codecentric/mailhog
+## JFrog Platform
+$ helm secrets upgrade artifactory-ha -i -n platform-prod -f values/artifactory-values.yaml jfrog/artifactory-ha
+$ helm secrets upgrade mission-control -i -n platform-prod -f values/mission-control-values.yaml jfrog/mission-control
+$ helm secrets upgrade xray -i -n platform-prod -f values/xray-values.yaml jfrog/xray
+$ helm secrets upgrade distribution -i -n platform-prod -f values/distribution-values.yaml jfrog/distribution
+$ helm secrets upgrade pipelines -i -n platform-prod -f values/pipelines-values.yaml jfrog/pipelines
+$ helm secrets upgrade edge -i -n platform-prod -f values/edge-values.yaml jfrog/artifactory
+
+## Ecosystem
+$ helm secrets upgrade jenkins -i -n jenkins -f values/jenkins-values.yaml jenkins/jenkins
+$ helm secrets upgrade mailhog -i -n mailhog -f values/mailhog-values.yaml codecentric/mailhog
