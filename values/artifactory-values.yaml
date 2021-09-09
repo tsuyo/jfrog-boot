@@ -17,10 +17,10 @@ ingress:
     hosts:
         - ENC[AES256_GCM,data:l1he9LbkvFfFU8ZTacOxvwKgtWDh9W8=,iv:LaLiFwP5qiLocHUOaNZ4VMX1UhC2GJxieaMR+IbYmVQ=,tag:Fbssn4Gy3mbVhglOpanVOg==,type:str]
     tls:
-        - ENC[AES256_GCM,data:QznjYspcav5DHbB9kjjMTQwHX6I6/bRvTWTBXoCxEXOh8CNx1z83YoufBeY7YsGEWpM2viwGgrVf1gg/GC82hj1cbhS5FZjDzR/JoWe0MbFaWjyVAvUJ11Ba3zaEVJD6zg6aaURKGl6rZDAfTg==,iv:01Y8CbtSAINuqv9VbA+qkIAf9JnobESN8R3Na0mdbQQ=,tag:SNxeVKdfPcTjCtAQWRvcpQ==,type:comment]
-        - ENC[AES256_GCM,data:HV036FmnmoJ+o34bUc7i0r64U7oulcHvmbrZXRmqK6aJH/mtviZM+y/Pv9dPARCBGxGR3u7k7MRhccLUb91ErdssqIufgre/0wlWwSMY1w7c/8PULdhSTI0=,iv:umChhZFf9o8tVpCdztPkUozwAekSbf9QEl7YKlpC9Us=,tag:IRLmxQYuqYkKQTydWZdSGA==,type:comment]
-        - ENC[AES256_GCM,data:pxoeSFSNdV9uovX5+RpTsjZEDvaoduSSVSmA1WSgHxV9rAIDaktBwx9q7Mw=,iv:k4TG7+9MaCDPNNEoomyuYHkgN9FNQNe4m+DZ1Znzi9U=,tag:W6pXsQIRBGfZaKkMzDzFgg==,type:comment]
-        - ENC[AES256_GCM,data:E6BzziBpPutOZyG+Ia04dlpVwDa5G6H0n9wxls1F,iv:kWwQ60fV6N7Zjumzo/WemhxnblmGd0tjrHNgyLJwzzc=,tag:5KynrYU+F4arA/42pjXFkw==,type:comment]
+        - ENC[AES256_GCM,data:2Kkv9T0gX4Y6435fIsXCJ4jLrXWRlfmkg+qgFyXlUrFv9ofBLV7Lz1I7QFAghC211mhauyfoBPsgYgMp/1n//PXXjazd/ZlVVWcGM8PWxjhFRj0SvMSJMwHmYsShLZ84tgRGs8RBiC0de1Vclw==,iv:TKI99Y8nq/mHXjsZu4cuWZjrWDKzV2naj+GqNgwPeRY=,tag:4a98nagaQEVe6ZbKtyuPMg==,type:comment]
+        - ENC[AES256_GCM,data:v2Pdz/x0jFtDkwk3wILKNW098pmQTBslMw3OKG7GO78DhworhR2xFTtA4mKGk+OBuTAb29sUtGPrqN/W1bIuEPBBdR64cSWPG57sq9WWAdy3B38z8fSghdY=,iv:FnTB2JG1gpNE1N7Fm4YQ4UNUupvBN9on7GlM2WiVKF4=,tag:HXkgcARgTZ5F+HLkEuG+8w==,type:comment]
+        - ENC[AES256_GCM,data:wU5tawwCXbbzfuhv2xJrcbp8C1U8pdKohAJt/hhlqnlK1DVd5jczNzLHxOk=,iv:vBvxnFOgHftHecLv+XJBeySaHnP51+t3mcr30c8nDQ0=,tag:wTRuBgXx1p9yaE5gnKIz6Q==,type:comment]
+        - ENC[AES256_GCM,data:BQmpNPJd+SRqkKN60uSNcILnZqePsbVUe3bPNMaw,iv:dbG3eI4oHLT3yTnKeUrhPGqcGxSoJRQrTOzhZmv+cVY=,tag:b/mppyWpzAYpLo/99U28yA==,type:comment]
         #ENC[AES256_GCM,data:2Kkv9T0gX4Y6435fIsXCJ4jLrXWRlfmkg+qgFyXlUrFv9ofBLV7Lz1I7QFAghC211mhauyfoBPsgYgMp/1n//PXXjazd/ZlVVWcGM8PWxjhFRj0SvMSJMwHmYsShLZ84tgRGs8RBiC0de1Vclw==,iv:TKI99Y8nq/mHXjsZu4cuWZjrWDKzV2naj+GqNgwPeRY=,tag:4a98nagaQEVe6ZbKtyuPMg==,type:comment]
         #ENC[AES256_GCM,data:v2Pdz/x0jFtDkwk3wILKNW098pmQTBslMw3OKG7GO78DhworhR2xFTtA4mKGk+OBuTAb29sUtGPrqN/W1bIuEPBBdR64cSWPG57sq9WWAdy3B38z8fSghdY=,iv:FnTB2JG1gpNE1N7Fm4YQ4UNUupvBN9on7GlM2WiVKF4=,tag:HXkgcARgTZ5F+HLkEuG+8w==,type:comment]
         #ENC[AES256_GCM,data:wU5tawwCXbbzfuhv2xJrcbp8C1U8pdKohAJt/hhlqnlK1DVd5jczNzLHxOk=,iv:vBvxnFOgHftHecLv+XJBeySaHnP51+t3mcr30c8nDQ0=,tag:wTRuBgXx1p9yaE5gnKIz6Q==,type:comment]
@@ -30,6 +30,10 @@ ingress:
 nginx:
     enabled: ENC[AES256_GCM,data:Mw8ye8c=,iv:1yxI9yqSLWHBS2Xm0aSuk6vW3xMnj+38rC8w2HKy+KA=,tag:vJ/7so3+uiUn6nvnGyYe9A==,type:bool]
 artifactory:
+    primary:
+        replicaCount: ENC[AES256_GCM,data:JQ==,iv:E9D3m+sv/8hCyLPwoAUkGvZXaC5r3qgT+W2V8ydehSI=,tag:HLe6XWPvkm28otq8m3oquw==,type:int]
+    node:
+        replicaCount: ENC[AES256_GCM,data:6w==,iv:dTuA3/xgyHoRuLdIl1KNaRJoIKTcwvcxpDugzgJ87L4=,tag:/W5cKCrKKkedyiOUPVLnXQ==,type:int]
     masterKey: ENC[AES256_GCM,data:64oqppt86fk8se20m4r6+gbcR1ziIBWzaU9teUw9YbeJJHd/iBIOkDa6FCyRO9pzYDQ/gAN4/fXOUocKKp6+tA==,iv:dars9SBQtu3EPQ9VkGTSS4uMmEe+diUkTtzj+dyNM5o=,tag:FsfIsx/h4qYgt76Al6JpZg==,type:str]
     joinKey: ENC[AES256_GCM,data:UeQIfTvqi9bj7NnI4wW+V5a90zt5FYFaj24M+doj9adywdqZUEidAh9q+WmasU95AwSifpFu7h52A83aqiZugg==,iv:eo4Z+7L1QBZ7wodLtYiV/WQ0hLzow5fJdmU/FcuAlZw=,tag:iQt2anl4HhDm6QaVrh9mbQ==,type:str]
     license:
@@ -42,8 +46,8 @@ sops:
     azure_kv: []
     hc_vault: []
     age: []
-    lastmodified: "2021-08-04T06:06:07Z"
-    mac: ENC[AES256_GCM,data:9c41r0llQXN/V+JOggE3cSkql/8pIRCtXK68aUTod6dZ6iLVssT9JPHGTapX+BsGpTtP1AGIoGNZ8R+LhWBzDVv2/WY7cPmEMbNxDSEHRx1fXrjh0kHv2ijswKoiaAK49PHj3MbHJzF4VS1bDC1+cXA6nUr6MxjbE2di9kg9laE=,iv:lR+N4UB/xFYY6Pna/Q9ccnqD7Y8NmWw6rM5DZXb0AzI=,tag:9NJUuqbbNHAeVskLA4oZRQ==,type:str]
+    lastmodified: "2021-09-09T07:02:32Z"
+    mac: ENC[AES256_GCM,data:SWPDcSDevvmUeRx1/tLCkSIoo9jAyOdKTN+mOoxhjuWsYCxvd2RbEikQT6BbpiLdWc/H2idgqJY/5i5MxBwBxSO7mMA1Rd6ZTlLRnlS7QKgj/5xmpFGd0/EE/OfBlhr4UDuFXfM3FNR0waH2h5M0BNpxBj8eGD5RT+fHh9oL04o=,iv:WJp8pqjb8/BBydxLSzGs1mXyFfd6PFu+ysadDJHKezo=,tag:vEc9b5HqR+KE5UDB/10Iag==,type:str]
     pgp:
         - created_at: "2021-08-04T04:21:46Z"
           enc: |
