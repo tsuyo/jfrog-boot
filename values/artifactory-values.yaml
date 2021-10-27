@@ -30,10 +30,7 @@ ingress:
 nginx:
     enabled: ENC[AES256_GCM,data:Mw8ye8c=,iv:1yxI9yqSLWHBS2Xm0aSuk6vW3xMnj+38rC8w2HKy+KA=,tag:vJ/7so3+uiUn6nvnGyYe9A==,type:bool]
 artifactory:
-    primary:
-        replicaCount: ENC[AES256_GCM,data:JQ==,iv:E9D3m+sv/8hCyLPwoAUkGvZXaC5r3qgT+W2V8ydehSI=,tag:HLe6XWPvkm28otq8m3oquw==,type:int]
-    node:
-        replicaCount: ENC[AES256_GCM,data:6w==,iv:dTuA3/xgyHoRuLdIl1KNaRJoIKTcwvcxpDugzgJ87L4=,tag:/W5cKCrKKkedyiOUPVLnXQ==,type:int]
+    replicaCount: ENC[AES256_GCM,data:qw==,iv:CjrmWUnriDDPm3ATujRMpkkdFFiHUS3MSTfUDfKP6p8=,tag:LSJ6JDJG6z3lzvn9Hewovg==,type:int]
     masterKey: ENC[AES256_GCM,data:64oqppt86fk8se20m4r6+gbcR1ziIBWzaU9teUw9YbeJJHd/iBIOkDa6FCyRO9pzYDQ/gAN4/fXOUocKKp6+tA==,iv:dars9SBQtu3EPQ9VkGTSS4uMmEe+diUkTtzj+dyNM5o=,tag:FsfIsx/h4qYgt76Al6JpZg==,type:str]
     joinKey: ENC[AES256_GCM,data:UeQIfTvqi9bj7NnI4wW+V5a90zt5FYFaj24M+doj9adywdqZUEidAh9q+WmasU95AwSifpFu7h52A83aqiZugg==,iv:eo4Z+7L1QBZ7wodLtYiV/WQ0hLzow5fJdmU/FcuAlZw=,tag:iQt2anl4HhDm6QaVrh9mbQ==,type:str]
     license:
@@ -46,8 +43,8 @@ sops:
     azure_kv: []
     hc_vault: []
     age: []
-    lastmodified: "2021-09-09T07:02:32Z"
-    mac: ENC[AES256_GCM,data:SWPDcSDevvmUeRx1/tLCkSIoo9jAyOdKTN+mOoxhjuWsYCxvd2RbEikQT6BbpiLdWc/H2idgqJY/5i5MxBwBxSO7mMA1Rd6ZTlLRnlS7QKgj/5xmpFGd0/EE/OfBlhr4UDuFXfM3FNR0waH2h5M0BNpxBj8eGD5RT+fHh9oL04o=,iv:WJp8pqjb8/BBydxLSzGs1mXyFfd6PFu+ysadDJHKezo=,tag:vEc9b5HqR+KE5UDB/10Iag==,type:str]
+    lastmodified: "2021-10-27T16:27:06Z"
+    mac: ENC[AES256_GCM,data:FqPTqEgI96qYkNA8oU6BCFjnsSmW2RRhb/5RWkRe0AZaBTf+vRQENy57GwTMhuvMdQH3FUrVkyy/wAvObpHFZVTPqbpZPPMJV9Cfb0en3jyRZLTcoF762wOqlJ3KjoybMrdBzadVf9e7NT3EeNIbzkzkoGsWCQJGUgGDrQICYEw=,iv:nmImoqOTZYTIjhpOWHwTGADvJi+ADBhmg4QEma4DUJA=,tag:DujyZbVEesrJOq6cVEseTQ==,type:str]
     pgp:
         - created_at: "2021-08-04T04:21:46Z"
           enc: |

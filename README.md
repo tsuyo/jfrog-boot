@@ -2,7 +2,7 @@
 
 ## JFrog Platform
 $ helm repo update
-$ helm secrets upgrade artifactory-ha -i -n platform-prod -f values/artifactory-values.yaml jfrog/artifactory-ha
+$ helm secrets upgrade artifactory -i -n platform-prod -f values/artifactory-values.yaml jfrog/artifactory
 $ helm secrets upgrade mission-control -i -n platform-prod -f values/mission-control-values.yaml jfrog/mission-control
 $ helm secrets upgrade xray -i -n platform-prod -f values/xray-values.yaml jfrog/xray
 $ helm secrets upgrade distribution -i -n platform-prod -f values/distribution-values.yaml jfrog/distribution
