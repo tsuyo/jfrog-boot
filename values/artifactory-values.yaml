@@ -27,6 +27,8 @@ ingress:
         #ENC[AES256_GCM,data:BQmpNPJd+SRqkKN60uSNcILnZqePsbVUe3bPNMaw,iv:dbG3eI4oHLT3yTnKeUrhPGqcGxSoJRQrTOzhZmv+cVY=,tag:b/mppyWpzAYpLo/99U28yA==,type:comment]
         - hosts:
             - ENC[AES256_GCM,data:PMzC0Ld7aR/FE1qQ4UjjEEPO8zYzJ64=,iv:Q1CFAa6XA4ZNMjdViwpXvSLEz8JKN2yVP7fSFNqR0Do=,tag:hrpZqCREEA1PXG9oQGOHOg==,type:str]
+mc:
+    enabled: ENC[AES256_GCM,data:XPyu+A==,iv:6OZYDb4cZFMuV3pV0sElyqlu8lcDKv9c5Z/PJooe1g4=,tag:5ir29gqhhpKOwLQolKiQVA==,type:bool]
 nginx:
     enabled: ENC[AES256_GCM,data:Mw8ye8c=,iv:1yxI9yqSLWHBS2Xm0aSuk6vW3xMnj+38rC8w2HKy+KA=,tag:vJ/7so3+uiUn6nvnGyYe9A==,type:bool]
 artifactory:
@@ -43,8 +45,8 @@ sops:
     azure_kv: []
     hc_vault: []
     age: []
-    lastmodified: "2021-10-27T16:27:06Z"
-    mac: ENC[AES256_GCM,data:FqPTqEgI96qYkNA8oU6BCFjnsSmW2RRhb/5RWkRe0AZaBTf+vRQENy57GwTMhuvMdQH3FUrVkyy/wAvObpHFZVTPqbpZPPMJV9Cfb0en3jyRZLTcoF762wOqlJ3KjoybMrdBzadVf9e7NT3EeNIbzkzkoGsWCQJGUgGDrQICYEw=,iv:nmImoqOTZYTIjhpOWHwTGADvJi+ADBhmg4QEma4DUJA=,tag:DujyZbVEesrJOq6cVEseTQ==,type:str]
+    lastmodified: "2021-10-27T17:04:18Z"
+    mac: ENC[AES256_GCM,data:Xi4RVlbwaFiizgi0dCSHRyObhGFK9oFZu8OAOOQcZ+3IDMakFkhdGrj218C0fIBBF47T3ubX1oc1mOVT4Prtjl88al3OGfALArrgWLDRWD/Ep+P+T7lxRnKEcQDrWIhuBhVUQdfyq7hWMl6l4IBsagnKLmqzV6ImdGz1hfTVrz4=,iv:GxTvmqOBKNtIuW7uZ6vViB/5RCy8zxetjsqnxKAE2Es=,tag:YWr2KXDk1mODs5bUHNFqRw==,type:str]
     pgp:
         - created_at: "2021-08-04T04:21:46Z"
           enc: |

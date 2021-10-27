@@ -1,9 +1,9 @@
 unifiedUpgradeAllowed: ENC[AES256_GCM,data:1J+xUg==,iv:FUAYJjcLz3xCv4dT+syh5RuXfeBxMYTdXoam3kdRbRI=,tag:pHS6Dow/enKDkG2Z/8jfaQ==,type:bool]
 databaseUpgradeReady: ENC[AES256_GCM,data:X4uwGw==,iv:8AyWKVrqpMwEhTsVWHV1zGpVLGxbx+A5tjcwQdh5KSA=,tag:4NhkIgjXqYOd0ZS7DHLu2w==,type:bool]
-missionControl:
-    #ENC[AES256_GCM,data:p1yRMU6PCJLa5vJk8uI5roOBJKpiQw==,iv:oXfont/d6aXGBygYg99EbVzhS6HS7T5SWBKUAjq+WPA=,tag:D0r6a+Ylr5xMjBRpyyOVTw==,type:comment]
-    jfrogUrl: ENC[AES256_GCM,data:NYuo4sHTORChN9QLEWpXLYRkBkhQDUqfz7K9EskccXowANjn0xd4pg==,iv:FOmYvGLCgxm6zj00zQAThBpwwyALIHWylZah81NHfDQ=,tag:0EqeoQAC8fKuRJ5yxDsT8g==,type:str]
-    joinKey: ENC[AES256_GCM,data:3dW6jjSz6vVjxcovLXTFeaaklZ6yUsg+vp6i6Ronha40DSEa1wZNdSsDt2GyMaq8kFr5si48upHolEKEVfDzuw==,iv:XT5N2O0u4BByP20k7m2quSO839y5+fVlaIQyswwymuY=,tag:VlkMG7x79+xS+iM2UpZ/3Q==,type:str]
+insightServer:
+    #ENC[AES256_GCM,data:jT6uVTbtDjMlmCb3Ur7QniupVbNj2w==,iv:REUmCd3c7+eNGR076IyEm1MT5YDhjb3u8kXQWwlZlHQ=,tag:5GY0H4iWEczWZdXwsY6HLw==,type:comment]
+    jfrogUrl: ENC[AES256_GCM,data:T8tu1E8tzxY5VgPi6edV6W6Ci/GMFFQR+ZQ2lH+hIHMlK8LrBQ==,iv:UGQ9XhNgRxxw/ruBXiU9l64HBer3MrvR7VApBwyJn1E=,tag:RFd/CmGMWAZDomAk+BgsbQ==,type:str]
+    joinKey: ENC[AES256_GCM,data:nbHlrZEqvKYTuw9VAavcBYyfMwYuElFB55WjJARvJCfGvluppQysm3JPK2PYttAf3ZxIcsKTeX/1tWzCYwEuWA==,iv:u0wqLYS05k8mpAf7RomIPziFzkR/Rxdqn8mJmUGCTuw=,tag:buqoHFZphxfZzrq0a0baRw==,type:str]
 postgresql:
     postgresqlPassword: ENC[AES256_GCM,data:jc2mgRwTuiA=,iv:nmzq11KLhbSIXpR65XvKot/WX/i9i30eXad/3mtD+uE=,tag:edW9fwCnDaMX954h9GR3CQ==,type:str]
 sops:
@@ -12,8 +12,8 @@ sops:
     azure_kv: []
     hc_vault: []
     age: []
-    lastmodified: "2021-08-04T06:31:22Z"
-    mac: ENC[AES256_GCM,data:yn/zyS9+H4vQcQY44zHqAgJ8ixFhRMC9qoxQ+kCMc0yipicNfz2sDTvPi3NoUYUiiKN7a2HMoFR/SdZBQURcWJwvALsmfN4gAtOKK6eKmdMJQSdcBPmcfNLgYbznC9+nfihKd3zE63F5Q0hWFdkY7GGBkYe1xklwpbfHdl6tuIw=,iv:ymTDEX4ioeU15uqdIMPHjFKr6VOjIIlKnSm0Qwtvcjg=,tag:4j3iQWO+O6GEXdJKnSZa+w==,type:str]
+    lastmodified: "2021-10-27T16:57:02Z"
+    mac: ENC[AES256_GCM,data:sKSi3vKT3+X7D3Z3YtykwRr0JOMsij/qm5VUf+naEpF9yJV2RPMmTvt32elon/gXNKL7lc1CM86YuNNnNK5l49WrbYwBhVK4siptGmg4rxBscEGP6+fwTO3ZMGuyD3u6APtk6YfgwIzj0CFid91cueoU6M8QUoIhYE55y0fvnQ0=,iv:ShAQyZRW5LQxmKYkSV5zaV3zRXLlcEo0QzGdn6QEEpM=,tag:UeHc3HNHxpPxAo0GhtEj3A==,type:str]
     pgp:
         - created_at: "2021-08-04T05:50:22Z"
           enc: |

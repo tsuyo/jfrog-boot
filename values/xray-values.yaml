@@ -5,7 +5,7 @@ common:
         size: ENC[AES256_GCM,data:pedQhw0=,iv:amXqTmFknopug29VbTgJXlIX4NjjWM7Ek02qqQEdUg4=,tag:s4XLVj73pySmMOSo/sfFeA==,type:str]
 xray:
     #ENC[AES256_GCM,data:QgQky3Npp8bc9+xf+6tthkMppo2V7A==,iv:Q/XlN5XQdjCijPZHlr1RiPmtk0RhLttEJDzbv+BQUGM=,tag:RwaU02SXMtEZ6SQ+zCAiIA==,type:comment]
-    jfrogUrl: ENC[AES256_GCM,data:r88mHw+3RFGCmriY0WP9E57XALTE4U1E4rm7CU9eGFDZZGBBw3V7ag==,iv:08G7lUdPZxc04Lrpsy31QZ+Hz4RqppT6lWNnSYxWEOg=,tag:+aEJAvbQvV1xdn4fJULwnw==,type:str]
+    jfrogUrl: ENC[AES256_GCM,data:V4iwOr2WLenD8SegStRebypgYYiyUtqTx2nGLaRD8SNk5SzBCg==,iv:ea1itbOgT1byQ+qggF158zbN5INn6D7PMLwGF8VzBKo=,tag:fe/IT4xe4dOqENVlTZ74RA==,type:str]
     joinKey: ENC[AES256_GCM,data:E+0uyjq0UWbWZmsplOCPGR5HbUG3WSEE87A70KorI44ws4FKihvYA7qWJTC4nCWUM0f9f5LUvTc+wZXL+4LtlQ==,iv:KgsXd41HrIMi0irGcBm48P1uxkTDlX0Xq3b2t9p9hRU=,tag:NJ58upgXn29JPu8XGkAH5Q==,type:str]
 postgresql:
     postgresqlPassword: ENC[AES256_GCM,data:qe2tREDll5U=,iv:0O4JswkyvsiqXiehhTQTgN6gPWe6rDFyzhm8jEeJ0uw=,tag:3xZXNjz1ge9TBTBFK6HHyg==,type:str]
@@ -21,8 +21,8 @@ sops:
     azure_kv: []
     hc_vault: []
     age: []
-    lastmodified: "2021-09-01T05:28:45Z"
-    mac: ENC[AES256_GCM,data:tsaedYqIoSCXl8amdcPWPPViMyW9ZZ5H0GIjLKrji9PnBHlLHaZibz3wLYbT1BTGJfyj2uyiGrzaSPSiAgKUpE5OR9zhwtPXFdkpzsKBSvKK0x1FCVNnYKa/1X+BMHc/pgGs5BJZs+obC+cKWK12Xp8MW18Gf899cOPqi13sGuc=,iv:fYZRdNKap3Xx6tOmw+v0k0vXinJ9SQdWqyZXiNyNDuY=,tag:VSz401xYmiGlxmZ7ZysP9Q==,type:str]
+    lastmodified: "2021-10-27T16:49:19Z"
+    mac: ENC[AES256_GCM,data:OQjgUF1y0kF0EC+FuTfPjr8+4+HrZkdMCZ9C49RreShiv0q7vcvjwS5dj9lgDuTYIccdsoBAGuc37astIoKUSlV01FfGB5YZ0THQXSLP8tfY1s6qiawJixbS2emPN/6P+NCLzvaMr4Y+fTz0eaY8oJ3JfuWfCEUJ0crDH6cKv8w=,iv:fxQKMvVJIQxbApTrhi7aBKyZxgvyxlxp1FA27y9fUG4=,tag:O7vSHemDzZbrEJCvC4C73g==,type:str]
     pgp:
         - created_at: "2021-08-04T06:42:47Z"
           enc: |
