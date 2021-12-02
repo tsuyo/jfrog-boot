@@ -2,8 +2,8 @@ databaseUpgradeReady: ENC[AES256_GCM,data:Hceqvg==,iv:0hXG+uGhA2OfkB5l12SzMRPzun
 #ENC[AES256_GCM,data:jGSm+DyKzg8njVsfrj+Zr9A=,iv:Cr7wxP0oxMFelxPhBTBZqwZf0oy9WpbXRA7lwEkTQ3s=,tag:/WAVw3kGDgbOLSIEaAXvFQ==,type:comment]
 pipelines:
     #ENC[AES256_GCM,data:m3g1IklaQN2Y7AxuGzelqaN1A1sDDQ==,iv:76u+b8mMehhEoauMDe0FngQiz+xwJDs0H21A0e5YvZo=,tag:Zo9zAnMxlU6B4H922NBKnw==,type:comment]
-    jfrogUrl: ENC[AES256_GCM,data:tVt+ZixGfqeLjD9MFmEOv5q7a7s+qiWivtXB7pG617Bd8fINDQ==,iv:AciD7jGmbRDlHO7BqQRY4faBqT6A87M4t4gMJ07dFAI=,tag:rfiTyuG8MSYrhoq/5SlIlA==,type:str]
-    jfrogUrlUI: ENC[AES256_GCM,data:NuV9trm12YE0GWcYWGz/tWtcBXkbG8QO0m4uWIN81A==,iv:v1cBXrPjtYbW/+i5/+2Vx0nUyoDe6xDhKwlqTEuYwsc=,tag:QOrlpp8zL/roy25iM8D+Pg==,type:str]
+    jfrogUrl: ENC[AES256_GCM,data:tnMxYVEYVeJZHEUoxi8niR5N1otemmt2rMHfLkeFhqI=,iv:8FBx1oiodJXu0qToh3GIHsa3l3Ls8RRMy33fp6tKdU8=,tag:Ljv9L5HjG6uUzdrEnVxWMQ==,type:str]
+    jfrogUrlUI: ENC[AES256_GCM,data:DcfNV2nNSZ9n5dTgIeUo4khhYM50bjkaa0dQtkquIxi1Hw==,iv:8RucF1KJhs6zrtf8S4FF8QO22j7/2qlyabTdycyjKxg=,tag:ZNF3tpn8ePsKeq1Hp94mmQ==,type:str]
     masterKey: ENC[AES256_GCM,data:S6emePKUz2eTXcjtjlseW1IwcjWFVlutombc0MVmgMium0V2RBzEZbIuwWXj+1zrQD62nCLJBtjQ7QwwvxSABw==,iv:VCFuGuYS+0C8RrqyCwoSXl6L8o+SyacNhchdtWqLr5s=,tag:gWOn9WPnAuYtz42nYvutXw==,type:str]
     joinKey: ENC[AES256_GCM,data:1shSTQZPKtfzWQbLO3Um3oxe7kJbyrm7fH2rTRTJQUuxgIoqtuRSYU7BS0yIz+Tzja0BX2CnmO7Hsv+TBY5cFw==,iv:+vUB7miyBiG9muICI8pNMT/0u1y7w4+QYG0gdvKxkW8=,tag:psekfJYHRGdSnxXf/gHTLw==,type:str]
     authToken: ENC[AES256_GCM,data:xXn9HUbcQXEC0YLhkjeIrXqD1nyWFB8CgnJc5zbQleibqy6G,iv:h/QfWFB6uWN7HZy3PMjnoNCLIO8tbZJQg2NmPeJdvzU=,tag:4SSTbBXuj7AdFgugmxrIMA==,type:str]
@@ -23,10 +23,10 @@ pipelines:
                 nginx.ingress.kubernetes.io/proxy-body-size: ENC[AES256_GCM,data:Nw==,iv:zTDLc6MONYQI7FXB1E50Z9VBKubyu/lMnFWVsNzVMm8=,tag:02clDugxiv5EIofvMyyCMA==,type:str]
             path: ENC[AES256_GCM,data:Ig==,iv:hDK3tcWgHP41E5mE8YNgs3mVQ8MaYUXbnTMuUFZz4HU=,tag:e9an6FqWTzAzQFs2WmeVwQ==,type:str]
             hosts:
-                - ENC[AES256_GCM,data:enmpygpW0ECW0lCF6OVDbb4dqCuN9AGcDrpoLg==,iv:Yfy1OW/A+nrSd63NnASfCPqp10i7RHcSkZfA4bCkg4Y=,tag:jTPZFrZteuD33G6nipiVlw==,type:str]
+                - ENC[AES256_GCM,data:CmVFD6As5xAqIVd9EDf/G+0+wb2EBQcPdwC1E88NiA==,iv:1KGLUfFymFvp0ZftISUAMZ7XGFxJCQV6oMP0QZpn56k=,tag:zTyf6itJJrV9octY3apOrg==,type:str]
             tls:
                 - hosts:
-                    - ENC[AES256_GCM,data:sEr8h897Z3lRlNOTsUzPBdP7p1V6Vh64luW17w==,iv:LsUHdCgHVfmZiZu/z+czIaUv35w0TvQSCk8uDrBwIR8=,tag:7V4JdGPk97fX2N/8R2Ul1A==,type:str]
+                    - ENC[AES256_GCM,data:NUDy/sok2YEAO/lkH/3PJ6QV6GQVFzupd1r86Nx12g==,iv:p3YVlxMO1BM6HqpOM4cU74mou0hI7UaVtL85nBTc7to=,tag:VhNZ405Vtylu7l/YcwPTOg==,type:str]
     www:
         ingress:
             enabled: ENC[AES256_GCM,data:NrvyNA==,iv:7+dIr5tjLHl3RjYyA/2LzFPKuQGT7b+lzroe1DMCuJg=,tag:6MG8x2Ir2cEAXS/5tQXrCQ==,type:bool]
@@ -40,10 +40,10 @@ pipelines:
                 nginx.ingress.kubernetes.io/proxy-body-size: ENC[AES256_GCM,data:xQ==,iv:CHfJyll/2LoRr76fSGtZa3IId9Qq7IJadJ370GVZ7r4=,tag:Ap5BBq3Ddu+kroVyEl2Hww==,type:str]
             path: ENC[AES256_GCM,data:Cg==,iv:aVctNznE7WiWX9YLvyzEy6LYJxuDgz2qmp4u3p7DlGQ=,tag:9tcui7SeGRmv267PakwfBg==,type:str]
             hosts:
-                - ENC[AES256_GCM,data:cD6IAS7NJ/U7kYK3FkOulcqAX3HnLQAuDrcozA==,iv:uu3mxaI1IJie0aNMkKNzwySopMU2azY+2iwZTCcUZPU=,tag:2PTYxru1nXEBf9QIdjXp6Q==,type:str]
+                - ENC[AES256_GCM,data:f5ZmPq+nUrUkjEnqq1ttKQvbzqxhDMGOF2gXmx0ziQ==,iv:rWpZQYqUu9ve3TFqgVdQtV0na9WDrLfpEv+7/5w1buI=,tag:3qmYnzEuVrvMnwAwAFy3sw==,type:str]
             tls:
                 - hosts:
-                    - ENC[AES256_GCM,data:E/mjP2R3Aqc6ChH3YMouI83VPw42teVjXfHC8Q==,iv:pwISqNPiCbR+idkYL3N8J05ynhOoi1uymCNHnEVppnc=,tag:1uqhpLXTmyuaVCpILUidRw==,type:str]
+                    - ENC[AES256_GCM,data:aCHcnNN2R5MmdCnOk1dwt2ZI2Pg9Af1OGvScanXtTQ==,iv:UpBXB9Czd+RsClerhhiVwJdWorF3jPFMGoRj/wJj4X8=,tag:NEFBPjIn5sabjglFfUELMw==,type:str]
 rabbitmq:
     enabled: ENC[AES256_GCM,data:KeLKSw==,iv:WUrxKayUeAokDZh2QNH+NMhkfDc1Xz/SWm6Ti0RKLI4=,tag:oKMe0x6H/9OzZQL1X4XfFA==,type:bool]
     auth:
@@ -63,8 +63,8 @@ sops:
     azure_kv: []
     hc_vault: []
     age: []
-    lastmodified: "2021-10-27T16:51:12Z"
-    mac: ENC[AES256_GCM,data:N85kJwxkNAalNrsg8vNMmkb6BAfcHGTYc+vxpmJ3rPtvLvtqv6umpa646qXH9vTDNEzkqPkRaIsBIy87GedZQgqk1SQwSBYUSGEwjc5DNLhCbhAZOxrNFCVae31LW+PdeHJU8nvb8FfHwbDdYP0uyzVcxde46xapKCaiCkASnd4=,iv:hzm0ydTx2RxxCcMI7HJp18dHSIMceKN2dEJW5I7fv8g=,tag:BRHfJR/5cVM1OVwjZLVAZQ==,type:str]
+    lastmodified: "2021-12-01T12:36:44Z"
+    mac: ENC[AES256_GCM,data:6EQupGYQsEJGOGagV2cZiwdFm02kmdR7MOh+2PBOlduC9wtaI2qTn2pTxC3cxzfO41H+xzvwVs5Czx2VkTEqRKjhO33yUpEjldT9y2kgRQQ20XQyRZkUqPY2nKfwCUSCM/qxivEZRgI4YD7WPfap9hI2ydxT1+PxwT2zSx5ixLY=,iv:RZ7ZpPXYUm4OpxBo6ok9Tx3HSepKyasznoVMuoKV8iI=,tag:fqXfedQsqsu9llNidIpq3A==,type:str]
     pgp:
         - created_at: "2021-08-04T07:07:34Z"
           enc: |
