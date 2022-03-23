@@ -15,8 +15,9 @@ $ helm secrets upgrade pipelines -i -n $NS -f values/$ENV/pipelines-values.yaml 
 $ helm secrets upgrade edge1 -i -n $NS -f values/$ENV/edge1-values.yaml jfrog/artifactory
 
 ## Ecosystem
-$ helm secrets upgrade jenkins -i -n jenkins -f values/jenkins-values.yaml jenkins/jenkins
-$ helm secrets upgrade mailhog -i -n mailhog -f values/mailhog-values.yaml codecentric/mailhog
+$ kubectl create ns ecosystem
+$ helm secrets upgrade jenkins -i -n ecosystem -f values/$ENV/jenkins-values.yaml jenkins/jenkins
+$ helm secrets upgrade mailhog -i -n ecosystem -f values/$ENV/mailhog-values.yaml codecentric/mailhog
 
 # Uninstall
 $ helm uninstall -n $NS edge

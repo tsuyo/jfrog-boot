@@ -9,12 +9,12 @@ ingress:
     ingress.kubernetes.io/proxy-send-timeout: "600"
     nginx.ingress.kubernetes.io/proxy-body-size: "0"
   hosts:
-    - host: mailhog.tsuyo.org
+    - host: mailhog.dev.gcp.tsuyo.org
       paths: ["/"]
 
   tls:
    - hosts:
-       - mailhog.tsuyo.org
+       - mailhog.dev.gcp.tsuyo.org
 
 auth:
   enabled: true
