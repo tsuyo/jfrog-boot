@@ -1,0 +1,33 @@
+environments:
+  dev-gcp:
+
+releases:
+- name: artifactory
+  chart: jfrog/artifactory
+  secrets:
+  - values/{{ .Environment.Name }}/artifactory-values.yaml
+
+- name: xray
+  chart: jfrog/xray
+  secrets:
+  - values/{{ .Environment.Name }}/xray-values.yaml
+
+- name: insight
+  chart: jfrog/insight
+  secrets:
+  - values/{{ .Environment.Name }}/insight-values.yaml
+
+- name: distribution
+  chart: jfrog/distribution
+  secrets:
+  - values/{{ .Environment.Name }}/distribution-values.yaml
+
+- name: pipelines
+  chart: jfrog/pipelines
+  secrets:
+  - values/{{ .Environment.Name }}/pipelines-values.yaml
+
+- name: edge1
+  chart: jfrog/artifactory
+  secrets:
+  - values/{{ .Environment.Name }}/edge1-values.yaml

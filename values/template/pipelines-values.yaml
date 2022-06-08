@@ -1,0 +1,59 @@
+databaseUpgradeReady: true
+# runMode: devmode
+pipelines:
+    # <service>.<namespace>
+    jfrogUrl: http://artifactory.platform:8082
+    jfrogUrlUI: <FILLME>
+    masterKey: <FILLME>
+    joinKey: <FILLME>
+    authToken: <FILLME>
+    serviceId: jfpip@1234567890
+    msg:
+        uiUserPassword: <FILLME>
+    api:
+        ingress:
+            enabled: true
+            annotations:
+                kubernetes.io/ingress.class: nginx
+                kubernetes.io/tls-acme: "true"
+                ingress.kubernetes.io/force-ssl-redirect: "false"
+                ingress.kubernetes.io/proxy-body-size: "0"
+                ingress.kubernetes.io/proxy-read-timeout: "600"
+                ingress.kubernetes.io/proxy-send-timeout: "600"
+                nginx.ingress.kubernetes.io/proxy-body-size: "0"
+            path: /
+            hosts:
+                - <FILLME>
+            tls:
+                - hosts:
+                    - <FILLME>
+    www:
+        ingress:
+            enabled: true
+            annotations:
+                kubernetes.io/ingress.class: nginx
+                kubernetes.io/tls-acme: "true"
+                ingress.kubernetes.io/force-ssl-redirect: "false"
+                ingress.kubernetes.io/proxy-body-size: "0"
+                ingress.kubernetes.io/proxy-read-timeout: "600"
+                ingress.kubernetes.io/proxy-send-timeout: "600"
+                nginx.ingress.kubernetes.io/proxy-body-size: "0"
+            path: /
+            hosts:
+                - <FILLME>
+            tls:
+                - hosts:
+                    - <FILLME>
+rabbitmq:
+    enabled: true
+    auth:
+        password: <FILLME>
+#  # static ip name: unified-emea-staging-rabbitmq-lb in us-central1
+#  # gcloud compute addresses describe unified-emea-staging-rabbitmq-lb --region us-central1
+#  # If you want to connect to external node pool, you need to connfigure this
+#  serviceVmLb:
+#    loadBalancerIP: 34.84.8.96 
+#    enabled: true
+# PostgreSQL
+postgresql:
+    postgresqlPassword: <FILLME>

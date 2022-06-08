@@ -1,0 +1,76 @@
+databaseUpgradeReady: true
+ingress:
+    enabled: true
+    annotations:
+        cert-manager.io/cluster-issuer: route53-letsencrypt-issuer
+        kubernetes.io/ingress.class: nginx
+        kubernetes.io/tls-acme: "true"
+        ingress.kubernetes.io/force-ssl-redirect: "false"
+        ingress.kubernetes.io/proxy-body-size: "0"
+        ingress.kubernetes.io/proxy-read-timeout: "600"
+        ingress.kubernetes.io/proxy-send-timeout: "600"
+        nginx.ingress.kubernetes.io/proxy-body-size: "0"
+        # nginx.ingress.kubernetes.io/configuration-snippet: |
+        #   proxy_pass_header   Server;
+        #   proxy_set_header    X-JFrog-Override-Base-Url http://platform.dev.gcp.tsuyo.org;    
+    path: /
+    hosts:
+        - <FILLME>
+    tls:
+        # Most ingress controllers, including ingress-nginx, Traefik, and Kong support specifying a single certificate
+        # to be used for ingress resources which request TLS but do not specify tls.[].secretName.
+        # see https://cert-manager.io/docs/faq/kubed/
+        # - secretName: certificate-tls
+        # Most ingress controllers, including ingress-nginx, Traefik, and Kong support specifying a single certificate
+        # to be used for ingress resources which request TLS but do not specify tls.[].secretName.
+        # see https://cert-manager.io/docs/faq/kubed/
+        # - secretName: certificate-tls
+        - hosts:
+            - <FILLME>
+mc:
+    enabled: true
+nginx:
+    enabled: false
+artifactory:
+    replicaCount: 3
+    masterKey: <FILLME>
+    joinKey: <FILLME>
+    copyOnEveryStartup:
+        - source: /artifactory_bootstrap/binarystore.xml
+          target: etc/artifactory/
+    persistence:
+        binarystoreXml: |
+            <config version="2">
+                <chain>
+                    <provider id="cache-fs" type="cache-fs">
+                        <provider id="sharding-cluster" type="sharding-cluster">
+                            <readBehavior>crossNetworkStrategy</readBehavior>
+                            <writeBehavior>crossNetworkStrategy</writeBehavior>
+                            <redundancy>2</redundancy>
+                            <lenientLimit>2</lenientLimit>
+                            <minSpareUploaderExecutor>2</minSpareUploaderExecutor>
+                            <sub-provider id="state-aware" type="state-aware"/>
+                            <dynamic-provider id="remote" type="remote"/>
+                            <property name="zones" value="local,remote"/>
+                        </provider>
+                    </provider>
+                </chain>
+                <!-- Shards add local file-system provider configuration -->
+                <provider id="state-aware" type="state-aware">
+                    <fileStoreDir>shard-fs-1</fileStoreDir>
+                    <zone>local</zone>
+                </provider>
+                <!-- Shards dynamic remote provider configuration -->
+                <provider id="remote" type="remote">
+                    <checkPeriod>30</checkPeriod>
+                    <serviceId>tester-remote1</serviceId>
+                    <timeout>10000</timeout>
+                    <zone>remote</zone>
+                    <property name="header.remote.block" value="true"/>
+                </provider>
+            </config>
+    license:
+        licenseKey: |-
+            <FILLME>
+postgresql:
+    postgresqlPassword: <FILLME>

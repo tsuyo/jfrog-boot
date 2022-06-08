@@ -1,0 +1,26 @@
+databaseUpgradeReady: true
+artifactory:
+    masterKey: <FILLME>
+    joinKey: <FILLME>
+    license:
+        licenseKey: <FILLME>
+ingress:
+    enabled: true
+    annotations:
+        kubernetes.io/ingress.class: nginx
+        kubernetes.io/tls-acme: "true"
+        ingress.kubernetes.io/force-ssl-redirect: "false"
+        ingress.kubernetes.io/proxy-body-size: "0"
+        ingress.kubernetes.io/proxy-read-timeout: "600"
+        ingress.kubernetes.io/proxy-send-timeout: "600"
+        nginx.ingress.kubernetes.io/proxy-body-size: "0"
+    path: /
+    hosts:
+        - <FILLME>
+    tls:
+        - hosts:
+            - <FILLME>
+nginx:
+    enabled: false
+postgresql:
+    postgresqlPassword: <FILLME>

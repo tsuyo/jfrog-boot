@@ -1,0 +1,17 @@
+unifiedUpgradeAllowed: true
+databaseUpgradeReady: true
+# common:
+#     persistence:
+#         size: 200Gi
+xray:
+    # <service>.<namespace>
+    jfrogUrl: http://artifactory.platform:8082
+    joinKey: <FILLME>
+postgresql:
+    postgresqlPassword: <FILLME>
+    persistence:
+        enabled: true
+        # size: 150Gi
+rabbitmq:
+    auth:
+        password: <FILLME>

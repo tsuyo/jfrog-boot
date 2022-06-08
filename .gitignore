@@ -2,7 +2,6 @@
 *.lic
 *.pem
 *.key
-license/
 gpg/
 # for helm-secrets
 *.yaml.dec
